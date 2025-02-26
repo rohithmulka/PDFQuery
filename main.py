@@ -1,6 +1,8 @@
 import streamlit as st
 from langchain_helper import process_pdf, answer_question
 
+
+st.set_page_config(page_title="PDF Query Assistant")
 st.title("PDF Query")
 
 # Initialize session state variables

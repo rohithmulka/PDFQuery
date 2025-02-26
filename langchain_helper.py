@@ -34,7 +34,7 @@ def process_pdf(pdf_file_path):
 
 def answer_question(vectorstore, question):
     """Retrieves an answer from the vectorstore based on the question."""
-    llm = ChatOpenAI(model_name='gpt-3.5-turbo')
+    llm = ChatOpenAI(model_name='gpt-4o-mini')
     retriever = vectorstore.as_retriever()
 
     # Retrieval-based QA chain
